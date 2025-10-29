@@ -70,5 +70,6 @@ def main():
 
         if st.button('Predict'):
             result=PredictionFunction(age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang)
-            st.markdown(f'Predicted stage of heart disease: {result}')
+            st.markdown(f'Predicted stage of heart disease: {result[0]}')
+
 main()
